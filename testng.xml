@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful Booker API Tests" parallel="tests" thread-count="5">
+    <test verbose="2" preserve-order="true" name="/Users/ramyasachin/RestfulBookerAPIAutomation">
+        <classes>
+            <class name="restfulBookerAPITests.CreateNewBookingTest.CreateNewBookingTest">
+                <methods>
+                    <include name="createNewBookingTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.DeleteByIDTest.DeleteByIDTest">
+                <methods>
+                    <include name="DeleteByIDTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.GetBookingByIDTest.GetBookingDetailsByIDTest">
+                <methods>
+                    <include name="getBookingDetailsByPassingBookingIDTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.GetBookingIds.GetAllBookingIdsTest">
+                <methods>
+                    <include name="GetAllBookingIdsTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.RestFulBookerBasicAPICallsVerifyTest">
+                <methods>
+                    <include name="updateBookingDetailsTest"/>
+                    <include name="deleteBookingByIdTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.UpdateBookingDetailsTest.UpdateBookingDetailsTest">
+                <methods>
+                    <include name="updateBookingDetailsTest"/>
+                </methods>
+            </class>
+            <class name="restfulBookerAPITests.UserAuthenticationTest.UserAuthenticationTest">
+                <methods>
+                    <include name="userAuthenticationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
